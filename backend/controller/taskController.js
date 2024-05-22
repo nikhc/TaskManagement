@@ -10,13 +10,7 @@ module.exports.createTask=async function(req,res){
        const n= await userModel.findByIdAndUpdate(req.id)
        n.tasks.push(newtask.id);
        n.save();
-       console.log("kjknfkjnkjdnkjcnkjdnckjjnwekjcnknkcnkjnkjnekcnkj")
-
-       console.log("kjknfkjnkjdnkjcnkjdnckjjnwekjcnknkcnkjnkjnekcnkj")
-       console.log("kjknfkjnkjdnkjcnkjdnckjjnwekjcnknkcnkjnkjnekcnkj")
-       console.log("kjknfkjnkjdnkjcnkjdnckjjnwekjcnknkcnkjnkjnekcnkj")
-       console.log("kjknfkjnkjdnkjcnkjdnckjjnwekjcnknkcnkjnkjnekcnkj")
-       console.log(n)
+       
         res.json({
             data:newtask
 
@@ -46,18 +40,7 @@ module.exports.getAllTask = async function (req, res) {
     }
 console.log("d skjnkjdnkjndskjndsjnadjjsnkjnasnkjnask")
 
-console.log("d skjnkjdnkjndskjndsjnadjjsnkjnasnkjnask")
-console.log("d skjnkjdnkjndskjndsjnadjjsnkjnasnkjnask")
-console.log("d skjnkjdnkjndskjndsjnadjjsnkjnasnkjnask")
 
-console.log(userData+"mn s hjbdshjcbhjdsbhjbdhjssb chjbdshjb")
-console.log(userData)
-console.log(userData)
-console.log(userData)
-console.log(userData)
-console.log(userData)
-console.log(userData)
-console.log(userData+"zx xzxjhkjasnkjnasajnkjasnkj")
     res.json({
       tasks: userData
     });
