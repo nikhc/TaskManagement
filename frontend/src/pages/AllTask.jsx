@@ -13,7 +13,7 @@ const AllTask = () => {
   useEffect(() => {
     const allTask = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/v2/alltask", {
+        const response = await axios.get("https://taskmanagement-5vu3.onrender.com/api/v2/alltask", {
           headers: {
             'Authorization': `Bearer ${m.token}`
           }

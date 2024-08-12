@@ -21,7 +21,7 @@ const Signup = () => {
         console.log(name, email, Password);
         try {
             const { data } = await axios.post(
-                "http://localhost:5000/api/v1/signup",
+                "https://taskmanagement-5vu3.onrender.com/api/v1/signup",
                 {
                     name,
                     email,

@@ -13,7 +13,7 @@ export default function Cards({ home, niku, data, setData ,setUpdatedData}) {
       if (!userInfo || !userInfo.token) {
         throw new Error("User not authenticated");
       }
-      const response = await axios.patch(`http://localhost:5000/api/v2/updateCTask/${id}`, {}, {
+      const response = await axios.patch(`https://taskmanagement-5vu3.onrender.com/api/v2/updateCTask/${id}`, {}, {
         headers: {
           'Authorization': `Bearer ${userInfo.token}`
         }
@@ -41,7 +41,7 @@ export default function Cards({ home, niku, data, setData ,setUpdatedData}) {
           throw new Error("User not authenticated");
         }
         
-        const response = await axios.patch(`http://localhost:5000/api/v2/updateITask/${id}`, {}, {
+        const response = await axios.patch(`https://taskmanagement-5vu3.onrender.com/api/v2/updateITask/${id}`, {}, {
           headers: {
             'Authorization': `Bearer ${userInfo.token}`
           }
@@ -69,7 +69,7 @@ export default function Cards({ home, niku, data, setData ,setUpdatedData}) {
         throw new Error("User not authenticated");
       }
   
-      await axios.delete(`http://localhost:5000/api/v2/deleteTask/${id}`, {
+      await axios.delete(`https://taskmanagement-5vu3.onrender.com/api/v2/deleteTask/${id}`, {
         headers: {
           'Authorization': `Bearer ${userInfo.token}`
         }

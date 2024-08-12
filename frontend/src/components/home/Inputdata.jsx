@@ -16,7 +16,7 @@ const Inputdata = ({ nik, niku, akka, updatedData, setUpdatedData }) => {
 
     const submitdata = async () => {
         try {
-            const res = await axios.post("http://localhost:5000/api/v2/createTask", data, {
+            const res = await axios.post("https://taskmanagement-5vu3.onrender.com/api/v2/createTask", data, {
                 headers: {
                     'Authorization': `Bearer ${m.token}`
                 }
@@ -32,7 +32,7 @@ const Inputdata = ({ nik, niku, akka, updatedData, setUpdatedData }) => {
 
     const updatethetask = async () => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/v2/updateTask/${updatedData.id}`, data, {
+            const res = await axios.patch(`https://taskmanagement-5vu3.onrender.com/api/v2/updateTask/${updatedData.id}`, data, {
                 headers: {
                     'Authorization': `Bearer ${m.token}`
                 }
